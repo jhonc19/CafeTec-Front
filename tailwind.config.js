@@ -6,7 +6,20 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        coffe: {
+          200: '#E3CAAB',
+          300: '#C0A078',
+          400: '#9E7C4F',
+          500: '#A17C4F',
+          600: '#835E30',
+          700: '#634016',
+          800: '#412605',
+          900: '#2D1902'
+        }
+      }
+    },
   },
   variants: {
     extend: {},
