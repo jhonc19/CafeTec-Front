@@ -7,6 +7,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'banner-1': "url('./assets/img/banner/banner1.jpg')",
+      },
       colors: {
         coffe: {
           200: '#E3CAAB',
