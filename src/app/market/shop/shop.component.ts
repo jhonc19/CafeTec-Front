@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faChevronRight, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faArrowRight, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-shop',
@@ -8,8 +8,11 @@ import { faChevronRight, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 export class ShopComponent implements OnInit {
   faChevronRight = faChevronRight;
   faArrowRight = faArrowRight;
+  faShoppingCart = faShoppingCart;
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
