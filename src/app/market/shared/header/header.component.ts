@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +8,16 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderComponent implements OnInit {
   faShoppingCart = faShoppingCart;
+  faBars = faBars;
+
+  showMenu = false;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleMenu() {
+    console.log('Se Ejecuto el metodo toggleMenu');
+    this.showMenu = !this.showMenu;
+  }
 }
