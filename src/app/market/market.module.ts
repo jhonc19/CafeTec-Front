@@ -5,12 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { PreloaderComponent } from './shared/preloader/preloader.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HeaderComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
