@@ -224,7 +224,7 @@
 
 <div #modalTop *ngIf="showModal" class="absolute left-0 w-full h-full">
   <div class="flex items-center justify-center w-full h-full">
-    <div class="relative w-1/3 bg-gray-100 p-10 rounded-md">
+    <div class="relative container bg-gray-100 p-10 rounded-md">
       <span class="absolute top-2 right-3 font-extrabold cursor-pointer" (click)="toggleModal()">X</span>
       <google-map [center]="center" [zoom]="6" [options]="options" width="100%">
         <map-marker *ngFor="let prov of proveedores" #marker="mapMarker" [position]="prov.ubication"
@@ -233,7 +233,7 @@
         </map-marker>
         <map-info-window>
           <div class="flex w-60">
-            <img class="w-1/3 py-2" src="../../../assets/img/maps/map-1.jpg" alt="">
+            <img class="w-1/3 py-2" src="../../../assets/img/maps/map-1.jpeg" alt="">
             <div class="w-2/3 px-4">
               <h4 class="font-bold text-xl text-coffe-400 pb-1">{{infoWindows}}</h4>
               <p class="text-xs text-justify">{{descriptionWindows}}</p>

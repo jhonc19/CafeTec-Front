@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faEye, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { MapInfoWindow} from '@angular/google-maps';
 
 type days = {
@@ -15,6 +15,9 @@ export class BlogComponent implements OnInit {
   @ViewChild(MapInfoWindow) infoWindow: any;
 
   faChevronRight = faChevronRight;
+  faEye = faEye;
+  faCommentDots = faCommentDots;
+
   center = { lat: -10.001013514381757, lng: -75.64504286969851 };
   options: google.maps.MapOptions = {
     streetViewControl: false,
