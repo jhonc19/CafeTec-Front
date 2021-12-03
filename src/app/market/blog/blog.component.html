@@ -14,20 +14,7 @@
 <div class="w-full bg-white py-24">
   <div class="container mx-auto flex">
     <div class="w-3/4 px-8">
-      <google-map [center]="center" [zoom]="9" [options]="options" width="100%">
-        <map-marker *ngFor="let prov of proveedores" #marker="mapMarker" [position]="prov.ubication"
-          (mapMouseover)="toggleInfoWindow(marker, true, prov.enterprise)" (mapMouseout)="toggleInfoWindow(marker, false)">
-        </map-marker>
-        <map-info-window>
-          <div class="flex w-60">
-            <img class="w-1/3 py-2" src="../../../assets/img/maps/map-1.jpg" alt="">
-            <div class="w-2/3 px-4">
-              <h4 class="font-bold text-xl text-coffe-400 pb-1">{{infoWindows}}</h4>
-              <p class="text-xs text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </map-info-window>
-      </google-map>
+
     </div>
     <div class="w-1/4 px-8 py-10 bg-coffe-200 bg-opacity-20 rounded-sm">
       <div class="pb-6">
