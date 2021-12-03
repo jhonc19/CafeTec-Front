@@ -8,6 +8,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ShopComponent } from './shop/shop.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     CommonModule,
+    GoogleMapsModule,
     FontAwesomeModule,
     MarketRoutingModule
   ]
