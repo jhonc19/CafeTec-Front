@@ -6,13 +6,15 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ShopComponent } from './shop/shop.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ShopComponent
+    ShopComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
